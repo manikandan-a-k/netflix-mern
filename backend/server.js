@@ -14,13 +14,7 @@ app.use(express.json()) //Allow us to parse req.body
 app.use(cookieParser()) // Allow to access cookies
 
 
-//Cors policy
-app.use(cors({
-  origin: ENV_VARS.FRONTEND_URL, // Replace with your frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-}));
+
 const port=ENV_VARS.PORT
 const __dirname=path.resolve()
 //Router
