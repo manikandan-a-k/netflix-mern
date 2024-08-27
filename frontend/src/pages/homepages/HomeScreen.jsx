@@ -34,39 +34,39 @@ const HomeScreen = () => {
         <img
           src={ORIGINAL_IMG_BASE_URL + trendingContent?.backdrop_path}
           alt="hero-image"
-          className="w-full h-full  absolute top-22 object-cover left-0 -z-50 sm:h-auto sm:object-cover lg:object-center"
+          className="w-full h-[60vh] sm:h-full absolute top-16 object-cover left-0 -z-50"
         />
         <div
           className="absolute top-0 w-full h-full bg-black/50 -z-50"
           aria-hidden="true"
         />
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center px-4 md:px-8 lg:px-16 xl:px-32">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32">
           <div className="bg-gradient-to-b from-black via-transparent to-transparent absolute top-0 left-0 h-full w-full -z-10" />
-          <div className="max-w-xl md:max-w-2xl">
-            <h2 className="font-extrabold text-3xl sm:text-5xl md:text-6xl leading-tight">
+          <div className="max-w-lg sm:max-w-xl md:max-w-2xl">
+            <h2 className="font-extrabold text-2xl sm:text-4xl md:text-5xl leading-tight">
               {trendingContent?.title || trendingContent?.name}
             </h2>
-            <p className="mt-4 text-md sm:text-lg">
+            <p className="mt-4 text-sm sm:text-md sm:text-lg">
               {trendingContent?.first_air_date?.split("-")[0] ||
                 trendingContent?.release_date?.split("-")[0]}{" "}
               | {trendingContent?.adult ? "18+" : "PG-13"}
             </p>
-            <p className="mt-4 text-md sm:text-lg line-clamp-3">
+            <p className="mt-4 text-sm sm:text-md sm:text-lg line-clamp-3">
               {trendingContent?.overview}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 to={`/watch/${trendingContent?.id}`}
-                className="flex items-center justify-center bg-white text-black px-4 py-2 rounded hover:bg-white/80"
+                className="flex items-center justify-center bg-white text-black px-3 py-2 rounded hover:bg-white/80"
               >
-                <Play className="size-6 mr-2 fill-black" />
+                <Play className="size-5 sm:size-6 mr-2 fill-black" />
                 Play
               </Link>
               <Link
                 to={`/watch/${trendingContent?.id}`}
-                className="flex items-center justify-center bg-gray-500/80 text-white px-4 py-2 rounded hover:bg-gray-500/50"
+                className="flex items-center justify-center bg-gray-500/80 text-white px-3 py-2 rounded hover:bg-gray-500/50"
               >
-                <Info className="size-6 mr-2" />
+                <Info className="size-5 sm:size-6 mr-2" />
                 More Info
               </Link>
             </div>
