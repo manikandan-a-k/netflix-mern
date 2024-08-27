@@ -12,7 +12,7 @@ import { authCheck } from "./helper/userAction";
 import WatchPage from "./pages/WatchPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-axios.defaults.baseURL="http://localhost:3000"
+axios.defaults.baseURL="https://netflix-mern-6raz.onrender.com"
 axios.defaults.withCredentials=true
 
 
