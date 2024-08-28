@@ -13,6 +13,7 @@ import WatchPage from "./pages/WatchPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 axios.defaults.baseURL="https://netflix-mern-6raz.onrender.com"
+// axios.defaults.baseURL="http://localhost:3000"
 axios.defaults.withCredentials=true
 
 
