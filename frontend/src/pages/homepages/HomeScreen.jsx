@@ -29,7 +29,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <div className="  sm:h-screen relative text-white">
+      <div className="  h-screen relative text-white">
         <Navbar />
         <img
           src={ORIGINAL_IMG_BASE_URL + trendingContent?.backdrop_path}
