@@ -34,7 +34,7 @@ const HomeScreen = () => {
         <img
           src={ORIGINAL_IMG_BASE_URL + trendingContent?.backdrop_path}
           alt="hero-image"
-          className="w-full h-[60vh] sm:h-full absolute top-16 object-cover left-0 -z-50"
+          className="w-full h-full absolute top-16 object-cover left-0 -z-50"
         />
         <div
           className="absolute top-0 w-full h-full bg-black/50 -z-50"
